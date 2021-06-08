@@ -1,0 +1,60 @@
+.firstLine{
+    margin: 0;
+    background-color: #EFEFEF;
+    height: 50px;
+    width: 100%;
+
+
+    .phone {
+        font-size: 1.2rem;
+        color: #000;
+        font-weight: bold;
+    }
+
+    .date{
+        font-size: 0.9rem;
+        color: #000;
+        font-weight: normal;
+        margin-left: 1rem;
+    }
+
+
+    .language{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%
+    }
+
+    .active {
+        font-weight: bold;
+        border-bottom: 2px solid #15C0D5;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    
+    .border {
+        margin: 0rem 0.2rem;
+        margin-top: 0.2rem;
+        padding-top: 0.4rem;
+        padding-bottom: 0.3rem;
+        align-items: center;
+        height: 100%;
+        border-right: 0.5px solid #000;
+        // border-left: 0.5px solid #000;
+        max-height: 5px !important;
+    }
+}
+
+.container{
+    max-width: 1500px !important;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+

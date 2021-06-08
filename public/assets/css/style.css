@@ -1,0 +1,8 @@
+*{
+    overflow-x: hidden;
+}
+
+.myContainer{
+    max-width: 1500px !important;
+    margin: 0 auto;
+}

@@ -1,0 +1,78 @@
+.containerHeader {
+  max-width: 1500px !important;
+  margin: 0 auto;
+
+  .headerFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin-top: 2.1rem;
+    margin-bottom: 1.87rem;
+  }
+
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    height: 100%;
+
+    p:hover {
+      cursor: pointer;
+    }
+  }
+
+  .icons {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .border {
+    border-bottom: 1px solid#DBDBDB;
+  }
+
+  .arrowDown {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+
+    border-top: 5px solid #15c0d5;
+
+    justify-content: center;
+    display: inline-flex;
+    margin-left: 0.2rem;
+  }
+
+  .search {
+    position: relative;
+    max-width: 40rem;
+    width: 100%;
+    margin: 0 2rem;
+  }
+
+  .input {
+    padding: 1rem 1.5rem;
+    width: 100%;
+  }
+
+  .searchIcon {
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translate(0, -50%);
+    color: #15c0d5;
+ 
+    width: 2rem;
+    height: 2rem;
+
+    &:hover{
+        cursor: pointer;
+    }
+  }
+
+}

@@ -1,0 +1,22 @@
+.icon{
+    height: 2rem;
+    width: 2rem;
+    margin-right: 0.75rem;
+}
+
+.service{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    .text{
+        margin-top: 1rem;
+    }
+
+   .title{
+       font-size: 1.1rem;
+       font-weight: bold;
+       margin-bottom: 0;
+   }
+}

@@ -1,0 +1,57 @@
+.main{
+    display: flex;
+    flex: 1;
+
+    overflow-x: hidden;
+
+    .first{
+        background-color: #EFEFEF;
+        padding: 0rem 3rem;
+        height: 100%;
+        flex: 1;
+        width: 34rem;
+        max-width: 100%;
+        margin-right: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+    
+
+        h3{
+            font-size: 1.2rem;
+            overflow: hidden;
+        }
+
+        p{
+            overflow: hidden;
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 0rem;
+            line-height: 1;
+            letter-spacing: 1px;
+        }
+
+        .button{
+            background-color: #15C0D5;
+            color: #fff;
+            padding: 1rem 2rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            margin-top: 5rem;
+            font-weight: bold;
+            // border-radius: 5px;
+            text-decoration: none;
+        
+        }
+    }
+
+    .images{
+        display: block;
+        width: 100%;
+    }
+}
+
