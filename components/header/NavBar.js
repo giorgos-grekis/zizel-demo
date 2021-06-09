@@ -5,9 +5,9 @@ import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 const NavBar = () => {
   return (
     <>
-    <Navbar expand="xl" className={classes.container}>
+    <Navbar expand="lg" className={classes.container}>
       <Container className={classes.container}>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        {/* <Navbar.Toggle aria-controls="basic-navbar-nav" /> */}
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link className={classes.link} href="/">ΜΑΡΚΕΣ</Nav.Link>
