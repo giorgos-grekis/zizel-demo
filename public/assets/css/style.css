@@ -12,13 +12,11 @@ a{
 }
 
 .modal-75w{
-    width: 50%!important;
-    max-width: none !important;
+  max-width: 950px !important;
 }
 
 .mobilemodal{
     width: 100% !important;
     max-width: none !important;
     margin: 0 !important;
-
 }

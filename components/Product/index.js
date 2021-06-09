@@ -6,7 +6,7 @@ import { AiOutlineHeart } from "react-icons/ai";
 import {SiFacebook} from 'react-icons/si'
 import {AiFillTwitterCircle} from 'react-icons/ai'
 import {FaPinterest} from 'react-icons/fa'
-import { Modal, Button, Col, Container, Row } from "react-bootstrap";
+import { Modal, Col, Container, Row } from "react-bootstrap";
 import { useState } from "react"
 
 const ProductOne = () => {
@@ -59,10 +59,10 @@ const ProductOne = () => {
               </Row>
               <Row className={`my-4`}>
                 <Col md={6}>
-                  <span onClick={handleShow} className={`d-flex justify-content-center`} style={{color:'#15c0d5', backgroundColor:"#fff", cursor:'pointer', padding:'15px'}} >ΣΥΝΕΧΕΙΑ ΑΓΟΡΩΝ</span>
+                  <span className={`d-flex justify-content-center`} style={{color:'#15c0d5', backgroundColor:"#fff", cursor:'pointer', padding:'10px', border:'1px solid #e4e4e4'}} >ΣΥΝΕΧΕΙΑ ΑΓΟΡΩΝ</span>
                 </Col>
                 <Col md={6}>
-                  <span onClick={handleShow} className={`d-flex justify-content-center`} style={{color:'#fff', backgroundColor:"#15c0d5", cursor:'pointer', padding:'15px'}} >ΔΕΙΤΕ ΤΟ ΚΑΛΑΘΙ</span>
+                  <span className={`d-flex justify-content-center`} style={{color:'#fff', backgroundColor:"#15c0d5", cursor:'pointer', padding:'10px',  border:'1px solid #15c0d5'}} >ΔΕΙΤΕ ΤΟ ΚΑΛΑΘΙ</span>
                 </Col>
               </Row>
             </Container>
@@ -121,7 +121,7 @@ const ProductOne = () => {
              </div> */}
 
             <div className={classes.socialAll}>
-              <span className={`${classes.socialShare} `}>share</span>
+              <span className={`${classes.socialShare} `}>Share</span>
               <SiFacebook className={`${classes.social}`}/>
               <AiFillTwitterCircle className={`${classes.social}`}/>
               <FaPinterest className={`${classes.social}`}/>
@@ -146,15 +146,25 @@ const ProductOne = () => {
               <span>&nbsp; (1 έως 2 εργάσιμες)</span>
             </p>
 
-            <div className="d-flex p-0">
+            <div className={`flex my-3`}>
               <div>
-                <p className={classes.price}>13,02 €</p>
-                <p className={classes.priceWin}>Κερδίζετε 5.58€</p>
+                <span style={{fontSize:'1.5rem', fontWeight:'bold'}}>13,02 €</span>
+                <span style={{fontSize:'1.2rem', color:'#6c757d', marginLeft:'5px', textDecoration:'line-through'}}>18,60 €</span>
               </div>
               <div>
-                <del className={classes.priceDel}>18,60 €</del>
+                <span className={classes.priceWin}>Κερδίζετε 5.58€</span>
               </div>
             </div>
+
+            {/*<div className="d-flex p-0">*/}
+            {/*  <div>*/}
+            {/*    <p className={classes.price}>13,02 €</p>*/}
+            {/*    <p className={classes.priceWin}>Κερδίζετε 5.58€</p>*/}
+            {/*  </div>*/}
+            {/*  <div>*/}
+            {/*    <del className={classes.priceDel}>18,60 €</del>*/}
+            {/*  </div>*/}
+            {/*</div>*/}
 
             <p className="mt-3">
               Σαμπουάν Κατά της Ψαλίδας που αποτελεί την ιδανική περοποίηση για
@@ -198,9 +208,16 @@ const ProductOne = () => {
                 {/*</Link>*/}
                 <span onClick={handleShow} className={classes.button}>ΠΡΟΣΘΗΚΗ ΣΤΟ ΚΑΛΑΘΙ</span>
               </div>
-              <div className="col-12 col-lg-2">
-                <AiOutlineHeart className={classes.icons} />
-              </div>
+              {/*<div className="col-12 col-lg-2 d-flex align-items-center">*/}
+              {/*  /!*<AiOutlineHeart className={classes.icons} />*!/*/}
+              {/*  <AiOutlineHeart className={`${classes.icons} d-none d-lg-block`} />*/}
+              {/*  <Link href={"/product"}>*/}
+              {/*    <a className={classes.button_2}>*/}
+              {/*      ΣΤΑ ΑΓΑΠΗΜΕΝΑ*/}
+              {/*      <AiOutlineHeart className={classes.icons} />*/}
+              {/*    </a>*/}
+              {/*  </Link>*/}
+              {/*</div>*/}
             </div>
           </div>
         </div>
