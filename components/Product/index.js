@@ -58,10 +58,10 @@ const ProductOne = () => {
                 </Col>
               </Row>
               <Row className={`my-4`}>
-                <Col md={6}>
+                <Col md={6} className={`mt-2`}>
                   <span className={`d-flex justify-content-center`} style={{color:'#15c0d5', backgroundColor:"#fff", cursor:'pointer', padding:'10px', border:'1px solid #e4e4e4'}} >ΣΥΝΕΧΕΙΑ ΑΓΟΡΩΝ</span>
                 </Col>
-                <Col md={6}>
+                <Col md={6} className={`mt-2`}>
                   <span className={`d-flex justify-content-center`} style={{color:'#fff', backgroundColor:"#15c0d5", cursor:'pointer', padding:'10px',  border:'1px solid #15c0d5'}} >ΔΕΙΤΕ ΤΟ ΚΑΛΑΘΙ</span>
                 </Col>
               </Row>

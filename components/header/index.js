@@ -82,19 +82,19 @@ const Header = () => {
           <Modal.Body>
             
 
-            <div className={classes.link} href="/">ΜΑΡΚΕΣ</div>
-            <div className={classes.link} href="/">SEASONAL</div>
-            <div className={classes.link} href="/">NEW IN</div>
-            <div className={classes.link} href="/">ΜΑΛΛΙΑ</div>
-            <div className={classes.link} href="/">ΠΡΟΣΩΠΟ</div>
-            <div className={classes.link} href="/">ΣΩΜΑ</div>
-            <div className={classes.link} href="/">ΝΥΧΙΑ</div>
-            <div className={classes.link} href="/">MAKEUP</div>
-            <div className={classes.link} href="/">OUTFIT</div>
-            <div className={classes.link} href="/">ΑΝΔΡΑΣ</div>
-            <div className={classes.link} href="/">ΔΩΡΑ</div>
-            <div className={classes.link} href="/">ΔΕΙΓΜΑΤΑ</div>
-            <div className={classes.link} href="/">BLOG</div>
+            <p className={classes.link} href="/">ΜΑΡΚΕΣ</p>
+            <p className={classes.link} href="/">SEASONAL</p>
+            <p className={classes.link} href="/">NEW IN</p>
+            <p className={classes.link} href="/">ΜΑΛΛΙΑ</p>
+            <p className={classes.link} href="/">ΠΡΟΣΩΠΟ</p>
+            <p className={classes.link} href="/">ΣΩΜΑ</p>
+            <p className={classes.link} href="/">ΝΥΧΙΑ</p>
+            <p className={classes.link} href="/">MAKEUP</p>
+            <p className={classes.link} href="/">OUTFIT</p>
+            <p className={classes.link} href="/">ΑΝΔΡΑΣ</p>
+            <p className={classes.link} href="/">ΔΩΡΑ</p>
+            <p className={classes.link} href="/">ΔΕΙΓΜΑΤΑ</p>
+            <p className={classes.link} href="/">BLOG</p>
           
         
 
