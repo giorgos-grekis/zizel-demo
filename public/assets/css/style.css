@@ -6,3 +6,8 @@
     max-width: 1500px !important;
     margin: 0 auto;
 }
+
+.modal-75w{
+    width: 50%!important;
+    max-width: none !important;
+}
