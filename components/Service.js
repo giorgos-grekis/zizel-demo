@@ -9,7 +9,7 @@ import { Col, Container, Row } from "react-bootstrap";
 const Service = () => {
   return (
     <Container className="myContainer my-2">
-      <Row>
+      <Row className={classes.desktop}>
 
         <Col>
             <div className={classes.service}>
@@ -53,8 +53,13 @@ const Service = () => {
 
 
       </Row>
+
+      <div className={`${classes.mobile} text-center my-3`}>
+        <span className='font-weight-bold'>Δωρεάν Αποστολή </span>
+            Για αγορές άνω των 59€
+      </div>
     </Container>
-  );c
+  );
 };
 
 export default Service;

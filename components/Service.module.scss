@@ -21,3 +21,15 @@
        overflow: hidden;
    }
 }
+.desktop{
+    @media (max-width: 1070px) {
+        display: none;
+    }
+}
+
+.mobile{ 
+    display: none;
+    @media (max-width: 1070px) {
+        display: block;
+    }
+}

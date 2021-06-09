@@ -4,6 +4,38 @@
 
     overflow-x: hidden;
 
+    .img{
+        position: relative;
+        overflow: visible;
+    }
+
+    .mobileArrow{
+        background-color: #15C0D5;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        right: 2rem;
+        transform: translate(-50%, -50%);
+        z-index: 2200;
+        display: none;
+
+        .p{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.5rem;
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+
     .first{
         background-color: #EFEFEF;
         padding: 0rem 3rem;
@@ -45,13 +77,119 @@
             font-weight: bold;
             // border-radius: 5px;
             text-decoration: none;
-        
         }
     }
 
     .images{
         display: block;
         width: 100%;
+    }
+
+
+    @media (max-width: 1475px){
+        .first{
+            padding: 0rem 1.5rem;
+            flex: 1;
+            width: 32rem; 
+        }
+    }
+
+    @media (max-width: 1440px){
+        .first{
+            padding: 0rem 1.5rem;
+            width: 30rem; 
+            
+            h3{
+                font-size: 1rem;
+            }
+    
+            p{
+                font-size: 2.5rem;
+                font-weight: bold;
+            }
+        }
+    }
+    
+    @media (max-width: 1440px){
+        .first{
+            padding: 0rem 1.5rem;
+            width: 25rem; 
+            
+            h3{
+                font-size: 1rem;
+            }
+    
+            p{
+                font-size: 2.5rem;
+                font-weight: bold;
+            }
+
+            .button{  
+                padding: 0.5rem 1rem;
+                width: 60%;
+                margin-top: 5rem;
+                font-weight: bold;
+            }
+        }
+    }
+
+    @media (max-width: 1330px){
+        flex-direction: column;
+
+        .first{
+            margin: 0 auto;
+            width: 100%;   
+            max-width: 907px;
+            padding: 3rem 2.5rem;
+
+            .button{  
+                display: none;
+            }
+        }
+
+
+        .img{
+            margin: 0 auto;
+        }
+       
+        .mobileArrow{
+            display: block;
+        }
+
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .first{
+            padding: 2rem 2rem;
+
+            h3{
+                font-size: 0.9rem;
+            }
+    
+            p{
+                font-size: 2rem;
+                letter-spacing: 0px;
+            }
+        }
+    }
+
+    @media (max-width: 350px) {
+        .first{
+            padding: 1rem 1rem;
+
+            h3{
+                font-size: 0.8rem;
+            }
+    
+            p{
+                font-size: 1.5rem;
+                letter-spacing: 0px;
+            }
+        }
     }
 }
 

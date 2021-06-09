@@ -27,14 +27,20 @@ const Main = () => {
                 </div>
             </div>
 
-            <div>
+            <div className={classes.img}>
                 {/* <Image 
                 src='/assets/images/mainImage.png'
                 alt='Main Logo'
                 width={907}
                 height={550}
                 /> */}
-                <img src='./assets/images/mainImage.png' alt='Main Logo' />
+                <img src='./assets/images/mainImage.png'  alt='Main Logo' />
+
+                <div className={classes.mobileArrow}>
+                    <p className={classes.p}>
+                     &#8594;
+                    </p>
+                </div>
             </div>
             
         </div>
