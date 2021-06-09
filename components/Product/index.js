@@ -11,25 +11,12 @@ import { Col, Container, Row } from "react-bootstrap";
 
 const ProductOne = () => {
   return (
-    // <Container className='myContainer'>
-    //   <Row>
-    //     <Col xl={1} sm={0}>
-    //         small Images
-    //     </Col>
-    //     <Col xl={5}>
-    //         largs Images
-    //     </Col>
-    //     <Col xl={6}>
-    //         contect
-    //     </Col>
-    //   </Row>
-    // </Container>
 
     <Container className="myContainer my-5">
       <div className="row">
 
           {/* product thumbnail */}
-        <div class="col-sm-1">
+        <div class="d-none d-lg-block col-lg-1">
           <div className={`${classes.productThumbnail}`}>
             <img
               src="./assets/images/product-1.jpg"
@@ -40,7 +27,7 @@ const ProductOne = () => {
         </div>
 
         {/* product images */}
-        <div class="col-5 ">
+        <div class="col-12 mx-auto col-lg-5">
           <div className={classes.productImage}>
             <img
               src="./assets/images/product-1.jpg"
@@ -55,22 +42,6 @@ const ProductOne = () => {
                 NEW
             </div>
           </div>
-          {/* social icons */}
-          {/* <div className='row mx-auto w-50 mt-3'>
-                <div 
-                className={`${classes.socialShare} col-3 mr-auto`} 
-                >share</div>
-
-                <div className={`${classes.social} col-2 mr-auto`}>
-                <SiFacebook />
-                </div>
-                <div className={`${classes.social} col-2 mr-auto`}>
-                    <AiFillTwitterCircle />
-                </div>
-                <div className={`${classes.social} col-2 mr-auto`}>
-                    <FaPinterest />
-                </div>
-             </div> */}
 
              <div className={classes.socialAll}>
                     <span className={`${classes.socialShare} `}>share</span>
@@ -80,7 +51,7 @@ const ProductOne = () => {
              </div>
         </div>
 
-        <div class="col-6 description">
+        <div class="col-12 mx-auto mt-5 mt-lg-0 col-lg-6 description">
           <img src="./assets/images/product-image.png" alt="" />
 
           <p className={classes.title}>
@@ -136,21 +107,22 @@ const ProductOne = () => {
           <div className={classes.underline}></div>
 
           <div className="row">
-            <div className="col-3">
+            <div className="col-12 mb-1 mb-lg-0 col-lg-3">
               <ButtonsPruducts />
-              {/* <div className="row mx-auto">
-                        <div className="col-3">-</div>
-                        <div className="col-3">1</div>
-                        <div className="col-3">+</div>
-                    </div> */}
             </div>
-            <div className="col-7">
+            <div className="col-12 mb-1 mb-lg-0 col-lg-7">
               <Link href={"/cart"}>
                 <a className={classes.button}>ΠΡΟΣΘΗΚΗ ΣΤΟ ΚΑΛΑΘΙ</a>
               </Link>
             </div>
-            <div className="col-2">
-              <AiOutlineHeart className={classes.icons} />
+            <div className="col-12 col-lg-2 mb-1 mb-lg-0">
+              <AiOutlineHeart className={`${classes.icons} d-none d-lg-block`} />
+              <Link href={"/cart"}>
+                <a className={classes.button_2}>
+                  ΣΤΑ ΑΓΑΠΗΜΕΝΑ
+                  <AiOutlineHeart className={classes.icons} />
+                </a>
+              </Link>
             </div>
           </div>
         </div>
