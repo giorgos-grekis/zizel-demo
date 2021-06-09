@@ -2,60 +2,60 @@ import React from "react";
 import classes from "./product.module.scss";
 import Link from "next/link";
 
+import ReactStars from "react-rating-stars-component";
+
 import ButtonsPruducts from "./buttonsPruducts";
 import { AiOutlineHeart } from "react-icons/ai";
-import {SiFacebook} from 'react-icons/si'
-import {AiFillTwitterCircle} from 'react-icons/ai'
-import {FaPinterest} from 'react-icons/fa'
+import { SiFacebook } from "react-icons/si";
+import { AiFillTwitterCircle } from "react-icons/ai";
+import { FaPinterest } from "react-icons/fa";
 import { Col, Container, Row } from "react-bootstrap";
 
 const ProductOne = () => {
+
+  const ratingChanged = (newRating) => {
+    console.log(newRating);
+  };
+
+
   return (
-
     <Container className="myContainer">
-
       <div className={`${classes.mobile} text-center mt-1 mb-4`}>
-        <span className='font-weight-bold'>Δωρεάν Αποστολή </span>
-            Για αγορές άνω των 59€
+        <span className="font-weight-bold">Δωρεάν Αποστολή </span>
+        Για αγορές άνω των 59€
       </div>
 
-
-      <div className={`${classes.product} row`}>
-
-          {/* product thumbnail */}
+      <div className={`${classes.product} row`} style={{overflow: "visible"}}>
+        {/* product thumbnail */}
         <div class="d-none d-lg-block col-lg-1">
           <div className={`${classes.productThumbnail}`}>
             <img
               src="./assets/images/product-1.jpg"
               alt="product-1"
-            //   style={{ width: "100%" }}
+              //   style={{ width: "100%" }}
             />
           </div>
         </div>
 
         {/* product images */}
-        <div class="col-12 mx-auto col-lg-5">
+        <div className="col-12 mx-auto col-lg-5" >
           <div className={classes.productImage}>
             <img
               src="./assets/images/product-1.jpg"
               alt="product-1"
-            //   style={{ width: "100%" }}
+              //   style={{ width: "100%" }}
             />
-            <div className={classes.discount}>
-                -20%
-            </div>
+            <div className={classes.discount}>-20%</div>
 
-            <div className={classes.new}>
-                NEW
-            </div>
+            <div className={classes.new}>NEW</div>
           </div>
 
-             <div className={classes.socialAll}>
-                    <span className={`${classes.socialShare} `}>share</span>
-                    <SiFacebook className={`${classes.social}`}/>
-                    <AiFillTwitterCircle className={`${classes.social}`}/>
-                    <FaPinterest className={`${classes.social}`}/>
-             </div>
+          <div className={classes.socialAll}>
+            <span className={`${classes.socialShare} `}>share</span>
+            <SiFacebook className={`${classes.social}`} />
+            <AiFillTwitterCircle className={`${classes.social}`} />
+            <FaPinterest className={`${classes.social}`} />
+          </div>
         </div>
 
         <div class="col-12 mx-auto mt-5 mt-lg-0 col-lg-6 description">
@@ -67,9 +67,45 @@ const ProductOne = () => {
             Shampoo (300ml)
           </p>
 
-          <p className={classes.code}>
+          <div className={` ${classes.center} row`}>
+            <div className="col-12 col-xl-6">
+              <p className={classes.code}>
+                Κωδ: <span>LRL-E277300</span>
+              </p>
+            </div>
+
+            <div className="col-12 col-xl-6">
+
+              <div className="row">
+                <div className={`${classes.rattings} col-12 ml-auto`}>
+                  <span className="">
+                  <ReactStars
+                count={5}
+                onChange={ratingChanged}
+                size={24}
+                activeColor="#ffd700"
+              /> 
+                  </span>
+                  <span className="ml-1">
+                  (Αξιολόγησεις)
+                  </span>
+               
+                </div>
+
+                {/* <div className="col-12 col-lg-6  ml-auto">
+                (Αξιολόγησεις)
+                </div> */}
+
+              </div>
+
+  
+        
+            </div>
+          </div>
+
+          {/* <p className={classes.code}>
             Κωδ: <span>LRL-E277300</span>
-          </p>
+          </p> */}
 
           <p className={classes.availability}>
             Διαθεσιμότητα Άμεση
@@ -123,7 +159,9 @@ const ProductOne = () => {
               </Link>
             </div>
             <div className="col-12 col-lg-2">
-              <AiOutlineHeart className={`${classes.icons} d-none d-lg-block`} />
+              <AiOutlineHeart
+                className={`${classes.icons} d-none d-lg-block`}
+              />
               <Link href={"/cart"}>
                 <a className={classes.button_2}>
                   ΣΤΑ ΑΓΑΠΗΜΕΝΑ
