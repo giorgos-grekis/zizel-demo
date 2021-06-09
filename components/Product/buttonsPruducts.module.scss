@@ -1,0 +1,21 @@
+.border{
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 0.32rem 0;
+}
+
+.number {
+    color: #15C0D5;
+    font-weight: bold;
+    font-size: 1.2rem;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.value{
+    font-weight: normal;
+    font-size: 1rem;
+    margin-top: 0.2rem;
+    text-align: center;
+}

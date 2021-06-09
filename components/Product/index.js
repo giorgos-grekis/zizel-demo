@@ -1,5 +1,9 @@
 import React from "react";
 import classes from './product.module.scss';
+import Link from 'next/link'
+
+import ButtonsPruducts from './buttonsPruducts';
+import { AiOutlineHeart } from "react-icons/ai";
 import { Col, Container, Row } from "react-bootstrap";
 
 const ProductOne = () => {
@@ -58,15 +62,38 @@ const ProductOne = () => {
                 <span style={{fontWeight:'bold', marginRight: '1rem'}}>Απόχρωση</span>
                 <select>
                     <option value="volvo">Επιλέξτε</option>
-                    <option value="saab">Saab</option>
-                    <option value="mercedes">Mercedes</option>
-                    <option value="audi">Audi</option>
+                    <option value="saab">Απόχρωση 1</option>
+                    <option value="mercedes">Απόχρωση 2</option>
+                    <option value="audi">Απόχρωση 3</option>
                 </select>
             </div>
 
             <div className={classes.details}>
                 <span style={{fontWeight:'bold'}}>Αποκλειστικά στο Zizel Beauty Shop: &nbsp;</span>
                 Το συγκεκριμένο προϊόν συνοδεύεται από θήκη προστασίας & μεταφοράς αξίας 29,90€ !
+            </div>
+
+            <div className={classes.underline}></div>
+
+            <div className='row'>
+                <div className='col-3'>
+                    <ButtonsPruducts />
+                    {/* <div className="row mx-auto">
+                        <div className="col-3">-</div>
+                        <div className="col-3">1</div>
+                        <div className="col-3">+</div>
+                    </div> */}
+                </div>
+                <div className='col-7'>
+                    <Link href={'/cart'}>
+                        <a className={classes.button}>
+                            ΠΡΟΣΘΗΚΗ ΣΤΟ ΚΑΛΑΘΙ
+                        </a>
+                    </Link>
+                </div>
+                <div className='col-2'>
+                 <AiOutlineHeart className={classes.icons}/>
+                </div>
             </div>
 
         </div>
