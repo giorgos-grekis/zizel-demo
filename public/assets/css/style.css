@@ -10,3 +10,8 @@
 a{
     text-decoration: none !important;
 }
+
+.modal-75w{
+    width: 50%!important;
+    max-width: none !important;
+}
