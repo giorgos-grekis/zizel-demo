@@ -37,9 +37,14 @@ const Main = () => {
                 <img src='./assets/images/mainImage.png'  alt='Main Logo' />
 
                 <div className={classes.mobileArrow}>
+                <Link href='/product'>
+                    <a>
                     <p className={classes.p}>
                      &#8594;
-                    </p>
+                     </p>
+                    </a>
+                   
+                </Link>
                 </div>
             </div>
             

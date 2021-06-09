@@ -6,3 +6,7 @@
     max-width: 1500px !important;
     margin: 0 auto;
 }
+
+a{
+    text-decoration: none !important;
+}
