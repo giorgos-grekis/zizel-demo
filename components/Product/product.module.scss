@@ -1,3 +1,11 @@
+.product{
+  margin: 2rem auto;
+
+  @media (max-width:991px){
+    margin: 0 auto;
+  }
+}
+
 .title {
   font-size: 1.5rem;
   font-weight: bold;
@@ -109,7 +117,7 @@
 
   &:hover {
     text-decoration: none;
-    color: #fff;
+    color: #000;
   }
 
   @media (min-width: 991px) {
@@ -187,4 +195,11 @@
   padding: 0.5rem 0.7rem;
   color: #000;
   font-weight: bold;
+}
+
+
+.mobile{
+  @media (min-width: 991px){
+    display: none;
+  }
 }

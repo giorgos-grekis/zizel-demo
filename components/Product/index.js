@@ -12,8 +12,15 @@ import { Col, Container, Row } from "react-bootstrap";
 const ProductOne = () => {
   return (
 
-    <Container className="myContainer my-5">
-      <div className="row">
+    <Container className="myContainer">
+
+      <div className={`${classes.mobile} text-center mt-1 mb-4`}>
+        <span className='font-weight-bold'>Δωρεάν Αποστολή </span>
+            Για αγορές άνω των 59€
+      </div>
+
+
+      <div className={`${classes.product} row`}>
 
           {/* product thumbnail */}
         <div class="d-none d-lg-block col-lg-1">
@@ -107,15 +114,15 @@ const ProductOne = () => {
           <div className={classes.underline}></div>
 
           <div className="row">
-            <div className="col-12 mb-1 mb-lg-0 col-lg-3">
+            <div className="col-12 mb-3 mb-lg-0 col-lg-3">
               <ButtonsPruducts />
             </div>
-            <div className="col-12 mb-1 mb-lg-0 col-lg-7">
+            <div className="col-12 mb-2 mb-lg-0 col-lg-7">
               <Link href={"/cart"}>
                 <a className={classes.button}>ΠΡΟΣΘΗΚΗ ΣΤΟ ΚΑΛΑΘΙ</a>
               </Link>
             </div>
-            <div className="col-12 col-lg-2 mb-1 mb-lg-0">
+            <div className="col-12 col-lg-2">
               <AiOutlineHeart className={`${classes.icons} d-none d-lg-block`} />
               <Link href={"/cart"}>
                 <a className={classes.button_2}>
